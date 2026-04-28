@@ -19,7 +19,7 @@ Alternatively, you can install the latest development version directly from git:
 
     pip install git+https://github.com/BenHaschim/svg4mpl.git
 
-*(Note: While `svg4mpl` aims for minimal dependencies, it is designed to be used alongside `matplotlib` and operates best in an `IPython`/Jupyter environment).*
+*Note: While `svg4mpl` aims for minimal dependencies, it is designed to be used alongside `matplotlib` and operates best in an `IPython`/Jupyter environment.*
 
 ### Quick Start
 Instead of wrestling with Matplotlib's complex layout engines (like `GridSpec`) to mix shapes, annotations, and plots, you can generate your plots individually and compose them using `svg4mpl`.
@@ -82,9 +82,9 @@ Draw standard vector graphics right on top of your plots.
 ### Utilities
 * `MplUnit(*args)`: Pass in `'10cm'` or `'5mm'` to convert physical dimensions into the inch-based numbers expected by Matplotlib's figsize.
 * `get_color(color)`: Supports `rgb()`, standard named colors, and Matplotlib's tab: color palette (e.g., `tab:blue`).
-* `save_pdf(svg_filename, pdf_filename, font_name="Aptos", font_path=None)`: Takes an outputted SVG file and pipes it through the `typst compile` CLI tool to generate a PDF. (Requires Typst to be installed on your system).
+* `save_pdf(svg_filename, pdf_filename, font_name="Aptos", font_path=None)`:
 
-    *Alternative: If you prefer to do this directly from your command line or within a Jupyter Notebook cell using shell commands, you can use the following syntax:*
+    *Note: You can take outputted SVG file and pipe it through the `typst compile` CLI tool to generate a PDF. (Requires Typst to be installed on your system). If you prefer to do this directly from your command line or within a Jupyter Notebook cell using shell commands, you can use the following syntax:*
 
     ```
     ! echo '#set page(height:auto,width:auto,margin:0cm);#set text(font: "Aptos");#image("simple_composition.svg")' | typst compile --font-path "M:/My Fonts/" - "simple_composition.pdf"
