@@ -81,7 +81,7 @@ Draw standard vector graphics right on top of your plots.
 
 ### Utilities
 * `MplUnit(*args)`: Pass in `'10cm'` or `'5mm'` to convert physical dimensions into the inch-based numbers expected by Matplotlib's figsize.
-* `get_color(color)`: Supports rgb(), standard named colors, and Matplotlib's tab: color palette (e.g., tab:blue).
+* `get_color(color)`: Supports `rgb()`, standard named colors, and Matplotlib's tab: color palette (e.g., `tab:blue`).
 * `save_pdf(svg_filename, pdf_filename, font_name="Aptos", font_path=None)`: Takes an outputted SVG file and pipes it through the `typst compile` CLI tool to generate a PDF. (Requires Typst to be installed on your system).
 
     *Alternative: If you prefer to do this directly from your command line or within a Jupyter Notebook cell using shell commands, you can use the following syntax:*
