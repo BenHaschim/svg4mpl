@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svg4mpl"
+version = "0.1.0"
+description = "A zero-dependency functional utility to compose SVGs from Matplotlib for Typst"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE*"]
+keywords = ["svg", "matplotlib", "typst"]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/BenHaschim/svg4mpl"

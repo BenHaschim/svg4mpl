@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/svg4mpl/__init__.py
+src/svg4mpl/svgutil.py
+src/svg4mpl.egg-info/PKG-INFO
+src/svg4mpl.egg-info/SOURCES.txt
+src/svg4mpl.egg-info/dependency_links.txt
+src/svg4mpl.egg-info/top_level.txt
