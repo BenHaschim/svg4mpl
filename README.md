@@ -79,13 +79,12 @@ Draw standard vector graphics right on top of your plots.
 ### Utilities
 * `MplUnit(*args)`: Pass in `'10cm'` or `'5mm'` to convert physical dimensions into the inch-based numbers expected by Matplotlib's figsize.
 * `get_color(color)`: Supports `rgb()`, standard named colors, and Matplotlib's tab: color palette (e.g., `tab:blue`).
-* `save_pdf(svg_filename, pdf_filename, font_name="Aptos", font_path=None)`:
 
-    *Note: You can take outputted SVG file and pipe it through the `typst compile` CLI tool to generate a PDF. (Requires Typst to be installed on your system). If you prefer to do this directly from your command line or within a Jupyter Notebook cell using shell commands, you can use the following syntax:*
+*Note: You can take outputted SVG file and pipe it through the `typst compile` CLI tool to generate a PDF. (Requires Typst to be installed on your system). If you prefer to do this directly from your command line or within a Jupyter Notebook cell using shell commands, you can use the following syntax:*
 
-    ```
-    ! echo '#set page(height:auto,width:auto,margin:0cm);#set text(font: "Aptos");#image("simple_composition.svg")' | typst compile --font-path "M:/My Fonts/" - "simple_composition.pdf"
-    ```
+```
+! echo '#set page(height:auto,width:auto,margin:0cm);#set text(font: "Aptos");#image("simple_composition.svg")' | typst compile --font-path "M:/My Fonts/" - "simple_composition.pdf"
+```
 
 ### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
