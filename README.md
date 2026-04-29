@@ -7,7 +7,7 @@ Perfect for creating complex figure panels for academic papers, specifically opt
 ### Features
 * **Pure Python:** Minimal overhead using Python's built-in `xml.etree.ElementTree`.
 * **Functional API:** No complex classes or object-oriented boilerplate; just pass your figures and coordinates into intuitive functions.
-* **Typst Ready:** Automatically strips problematic `<metadata>` and redundant style tags from Matplotlib SVGs, ensuring clean output for Typst and other modern typesetting systems. Contains utilities to convert directly to PDF using the Typst CLI.
+* **Typst Ready:** Automatically strips problematic `<metadata>` and redundant style tags from Matplotlib SVGs, ensuring clean output for Typst and other modern typesetting systems.
 * **Jupyter Integration:** Automatically renders previews of your SVG compositions directly within Jupyter Notebooks.
 
 ### Installation
@@ -19,7 +19,7 @@ Alternatively, you can install the latest development version directly from git:
 
     pip install git+https://github.com/BenHaschim/svg4mpl.git
 
-*Note: While `svg4mpl` aims for minimal dependencies, it is designed to be used alongside `matplotlib` and operates best in an `IPython`/Jupyter environment.*
+*Note: While `svg4mpl` aims for minimal dependencies, it is designed to be used alongside `matplotlib` in an `IPython`/Jupyter environment.*
 
 ### Quick Start
 Instead of wrestling with Matplotlib's complex layout engines (like `GridSpec`) to mix shapes, annotations, and plots, you can generate your plots individually and compose them using `svg4mpl`.
@@ -56,9 +56,6 @@ composition = S.Figure(
 
 # 3. Save the final result to an SVG file
 composition.write("simple_composition.svg")
-
-# 4. (Optional) Convert the SVG directly to PDF using Typst
-S.save_pdf("simple_composition.svg", "simple_composition.pdf", font_name="Aptos")
 ```
 ### Core API
 All layout functions are located in `svg4mpl.svgutil`. They return standard `xml.etree.ElementTree` elements, making them highly hackable.
